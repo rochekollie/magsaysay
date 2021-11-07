@@ -78,21 +78,12 @@
 		<nav>
 			<ul>
 				<li><a href="./"
-				       class="nav-icon-label"
 				       id="home-label">Home</a></li>
-				<li><a href="booking.html"
-				       class="nav-icon-label"
-				       id="cta-sponsor">Buy Tickets</a></li>
-				<li><a href="merch.html"
-				       class="nav-icon-label">Merch</a></li>
-				<li><a href="tour.html"
-				       class="nav-icon-label">Tour</a></li>
-				<li><a href="music.html"
-				       class="nav-icon-label">Music</a></li>
-				<li><a href="artists.html"
-				       class="nav-icon-label">Artists</a></li>
-				<li><a href="about.html"
-				       class="nav-icon-label">About</a></li>
+				<li><a href="music.html">Music</a></li>
+				<li><a href="merch.html">Merch</a></li>
+				<li><a href="tour.html">Tour</a></li>
+				<li><a href="artists.html">Artists</a></li>
+				<li><a href="about.html">About</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -104,17 +95,15 @@
 			<!-- Sort Section -->
 			<div class="sort-container">
 				<div class="sort-input-box">
-					<label for="sort-list">Sort by: </label>
+					<label for="sort-list">Go to: </label>
 					<select id="sort-list"
-					        name="sort-list">
-					</select>
+					        name="sort-list"></select>
 				</div>
 			</div>
-
-			<!-- Shirts -->
-			<div class="cards-wrapper">
-				<h2 class="merch-type">Shirts</h2>
-				<div class="merch-section">
+			<div class="section-wrapper">
+				<!-- Shirts -->
+				<h2>Shirts</h2>
+				<div class="cards-section">
 					<!-- Product 1 -->
 					<div class="merch-card">
 						<img src="images/merch/meysam-jarahkar-NMYG69BG_Jg-unsplash.jpeg"
@@ -150,10 +139,10 @@
 				</div>
 			</div>
 
-			<!-- Mugs -->
-			<div class="cards-wrapper">
-				<h2 class="merch-type">Mugs</h2>
-				<div class="merch-section">
+			<div class="section-wrapper">
+				<!-- Mugs -->
+				<h2>Mugs</h2>
+				<div class="cards-section">
 					<!-- Product 1 -->
 					<div class="merch-card">
 						<img src="images/merch/meysam-jarahkar-NMYG69BG_Jg-unsplash.jpeg"
@@ -189,10 +178,10 @@
 				</div>
 			</div>
 
-			<!-- Artworks -->
-			<div class="cards-wrapper">
-				<h2 class="merch-type">Artworks</h2>
-				<div class="merch-section">
+			<div class="section-wrapper">
+				<!-- Artworks -->
+				<h2>Artworks</h2>
+				<div class="cards-section">
 					<!-- Product 1 -->
 					<div class="merch-card">
 						<img src="images/merch/meysam-jarahkar-NMYG69BG_Jg-unsplash.jpeg"
@@ -227,56 +216,8 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
-	</div>
-
-
-	<script defer>
-		window.onload = function () {
-
-			// Get all h2 elements and append the array to the select element with the id "sort-list" within an option element.
-
-			let h2 = document.getElementsByTagName("h2");
-			let select = document.getElementById("sort-list");
-			let defaultOption = document.createElement("option");
-			defaultOption.text = "Select merch";
-			select.add(defaultOption);
-
-			// Select and disable the default option.
-			defaultOption.selectedIndex = 0;
-			defaultOption.disabled = true;
-			defaultOption.selected = true;
-
-			// Add the h2 elements to the select element.
-			for (let heading of h2) {
-				let option = document.createElement("option");
-				option.text = heading.innerText;
-				select.add(option);
-			}
-
-			// Add the event listener to the select element.
-			select.addEventListener("change", function () {
-				// Get the selected option.
-				let selectedOption = this.options[this.selectedIndex];
-
-				// Get the selected option's text.
-				let selectedOptionText = selectedOption.text;
-
-				// Get all h2 elements.
-				let sectionTitle = document.getElementsByTagName("h2");
-
-				// Loop through the h2 elements and check if the text of the selected option matches the text of the h2 element.
-				for (let heading of sectionTitle) {
-					if (heading.innerText === selectedOptionText) {
-						// If the text matches, scroll to the h2 element.
-						heading.scrollIntoView();
-					}
-				}
-			});
-		};
-	</script>
 </main>
 <footer>
 	<p>&copy;2006-2021 Magsaysay | All rights reserved.</p>
