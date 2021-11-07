@@ -8,6 +8,7 @@
     --dark: #27282c;
     --navy: #1f2033;
     --night: #242832;
+    --forest: #262513;
     --grey: rgb(200, 200, 200);
     --light-grey: #f5f5f7;
     --clear: rgb(225, 225, 225);
@@ -45,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Rubik Mono One', sans-serif;
+    /*font-family: 'Rubik Mono One', sans-serif;*/
     color: var(--black);
 }
 
@@ -62,7 +63,11 @@ p {
 a, .link {
     text-decoration: none;
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 500;
+}
+
+a:hover {
+    font-weight: 700;
 }
 
 header {
@@ -131,7 +136,7 @@ main {
 img {
     display: block;
     width: 100%;
-    height: auto;
+    /*height: auto;*/
 }
 
 .feature-banner {
@@ -162,8 +167,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--night);
-    color: var(--silver);
+    background-color: var(--forest);
+    color: #fff;
     width: 100%;
     padding: 2em;
     text-align: center;
@@ -181,7 +186,6 @@ footer {
 }
 
 #logo {
-    fill: red;
     width: 240px;
     cursor: pointer;
     pointer-events: all;
@@ -242,32 +246,26 @@ nav ul li a:hover, nav ul li a:active {
     display: none;
 }
 
+ul li {
+    list-style-type: square;
+}
+
 #cta-sponsor {
+    font-family: 'Rubik Mono One', sans-serif;
     background-color: var(--accent);
-    color: #fff;
+    color: var(--link);
     border: solid 1px rgba(0, 0, 0, .1);
     border-radius: .2rem;
-    margin-left: 100px;
-}
-
-#cta-sponsor a {
-    color: #fff;
-    text-transform: capitalize;
-}
-
-#cta-sponsor a:hover {
-    border-bottom: none;
-    padding-bottom: unset;
-    color: var(--accent);
-    background-color: #fff;
-    font-weight: 500;
+    padding: .5rem 1rem;
 }
 
 #cta-sponsor:hover {
-    background-color: #fff;
-    border: solid thin var(--accent);
-    border-radius: .2rem;
+    background-color: var(--link);
     color: var(--accent);
+    border: solid 2px var(--accent);
+    border-radius: .2rem;
+    transition: 50ms;
+    transition-property: border-left-width, border-top-width, border-right-width, border-bottom-width;
 }
 
 .hide-element {
@@ -313,6 +311,9 @@ button:hover, .btn:hover {
     transition: color 500ms ease;
     transition-property: font-size;
     font-size: clamp(.9rem, 1vw, .9em);
+    color: var(--accent);
+    background-color: var(--link);
+    font-weight: 600;
 }
 
 /* HOME PAGE */
@@ -328,42 +329,76 @@ button:hover, .btn:hover {
 }
 
 
-.feature-episode-container {
+.feature-album-container {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.episode-card-section {
+.album-card-section {
     display: flex;
+    justify-content: center;
     gap: 1em;
     flex-wrap: wrap;
 }
 
-/* Styles for the EPISODE CARDS */
-.episode-card {
+.music-section-heading {
+    text-align: center;
+    margin-bottom: 1.7em;
+}
+
+/* TABLE STYLES */
+
+table {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+table thead tr th[scope="col"] {
+    background-color: rgba(19, 145, 100, .8);
+    background-color: #717451;
+    color: var(--link);
+    font-weight: 500;
+    padding: 1rem 5rem;
+}
+
+table tbody tr th[scope="row"] {
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+table thead tr, table tbody tr:nth-child(even) {
+    background-color: rgb(236, 236, 236);
+}
+
+.fill{
+    background-color: var(--accent);
+    color: #FFF;
+    white-space: nowrap;
+}
+
+/* END TABLE STYLES */
+
+/* Styles for the album cards */
+.album-card {
     font-family: 'Rubik', sans-serif;
     font-size: clamp(1rem, 1vw, 1.2rem);
     display: flex;
     flex-direction: column;
     border: solid thin var(--grey);
-    border-radius: .2rem;
+    border-radius: .7rem;
     background-color: #fff;
     padding: .5em 1em;
-    width: 100%;
+    width: min(100%, 300px);
+    height: 400px;
     box-shadow: 1px 0 24px 4px rgba(0, 0, 0, .12);
     margin: 0;
     overflow: hidden;
 }
 
-.episode-card:hover {
+.album-card:hover {
     cursor: pointer;
     pointer-events: all;
     background-color: #f5eddd;
-}
-
-.episode-card:hover .card-title {
-    text-decoration: underline;
 }
 
 .card-content-box {
@@ -379,14 +414,20 @@ button:hover, .btn:hover {
     margin-bottom: .5rem;
 }
 
-.card-img {
+.album-artwork {
     display: block;
-    width: 150px;
-    height: 150px;
-    border-radius: .2rem;
-    box-shadow: 1px 3px 12px 1px rgba(0, 0, 0, .24);
-    flex-grow: 1;
-    align-self: center;
+    width: 100%;
+    height: 240px;
+    border-radius: .7rem;
+    /*box-shadow: 1px 3px 12px 1px rgba(0, 0, 0, .24);*/
+}
+
+.album-artwork:hover {
+    display: block;
+    width: 100%;
+    height: 240px;
+    border-radius: .7rem;
+    /*box-shadow: 1px 3px 12px 1px rgba(0, 0, 0, .24);*/
 }
 
 .card-contents {
@@ -397,10 +438,11 @@ button:hover, .btn:hover {
     margin: 0;
 }
 
-.card-title {
+.album-title {
     text-align: center;
-    font-weight: 600;
-    color: var(--accent);
+    font-weight: 500;
+    color: var(--forest);
+    color: #8f8c3e;
     margin: 1rem 0 .5rem 0;
 }
 
@@ -440,7 +482,7 @@ button:hover, .btn:hover {
     background-color: var(--shade);
 }
 
-.episode-card:hover.card-player-box {
+.album-card:hover.card-player-box {
     background-color: #e8c897;
 }
 
@@ -575,6 +617,12 @@ button:hover, .btn:hover {
 
     #logo {
         width: 200px;
+        transition: 700ms;
+    }
+
+    #logo:hover {
+        transition: 1000ms;
+        width: 180px;
     }
 
     #home-label {
@@ -636,19 +684,9 @@ button:hover, .btn:hover {
         padding: 0;
     }
 
-    .card-img {
-        width: 100px;
-        height: 100px;
-    }
-
     .card-content-box {
         flex-direction: row;
         gap: .7em;
-    }
-
-    .card-title {
-        text-align: left;
-        margin: 0 0 .2rem 0;
     }
 
     .card-desc {

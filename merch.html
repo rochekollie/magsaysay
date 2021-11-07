@@ -52,21 +52,355 @@
 		<nav>
 			<ul>
 				<li><a href="./" class="nav-icon-label" id="home-label">Home</a></li>
+				<li><a href="booking.html" class="nav-icon-label" id="cta-sponsor">Buy Tickets</a></li>
 				<li><a href="merch.html" class="nav-icon-label">Merch</a></li>
 				<li><a href="tour.html" class="nav-icon-label">Tour</a></li>
 				<li><a href="music.html" class="nav-icon-label">Music</a></li>
-				<li><a href="contact.html" class="nav-icon-label">Contact</a></li>
+				<li><a href="artists.html" class="nav-icon-label">Artists</a></li>
 				<li><a href="about.html" class="nav-icon-label">About</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
 <main>
-	<img src="images/1280px-Churchill_Mk_V_pic2.jpg"
-	     alt="">
+	<div class="content-wrapper">
+		<div class="page-contents">
+			<h1>Browse Merch</h1>
+			<!-- Sort Section -->
+			<div class="sort-container">
+				<div class="sort-input-box">
+					<label for="sort-list">Go to: </label>
+					<select id="sort-list" name="sort-list">
+					</select>
+				</div>
+			</div>
+			<!-- Season 3 -->
+			<section>
+				<div class="faq-section-header">
+					<h2>T-Shirts</h2>
+					<svg class="expand-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+						<path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+						<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+					</svg>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 10</h3>
+						<?php
+					// demo-2
+					get_episode(
+						'../images/microphone-2247471.jpeg',
+						'I love this girl',
+						'Title',
+						'Description',
+						'../audio/demo-3.mp3'
+					);
+					?>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>Songzaby is a digital music distribution company that allows users recording
+						   artists, record labels, and production companies to distribution their music
+						   to major streaming services such as Apple Music, Spotify, Youtube, Tidal,
+						   Amazon Music, e.t.c.</p>
+					</div>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 9</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>Songzaby has a free 1 month trial period to allow artists, record labels, or
+						   production companies to test the service and learn about the features we
+						   provide. After the trial period, users are automatically billed for the
+						   subscription plan they chose during the free trial signup. See our
+							<a href="#">pricing</a> to learn more about our subscriptions plans.
+						</p>
+					</div>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 8</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>We have three subscription models. A single artists plan, a label plan, and
+						   our free plan. See our <a href="#">pricing</a> to learn more about the
+						   features of each of these subscriptions plans.</p>
+					</div>
+				</div>
+			</section>
+			<!-- Season 2 -->
+			<section>
+				<div class="faq-section-header">
+					<h2>Coffee Mugs</h2>
+					<svg class="expand-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+						<path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+						<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+					</svg>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 10</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>Songzaby can be used through our website located at <a href="#">https://songzaby.com</a>.
+						   In order to use our service, you will need to <a href="#">create a free
+						                                                             account</a> on our
+						   website. Creating an account and free for anyone who wants to use our
+						   service.</p>
+					</div>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 9</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>To create a Songzaby's account you will need an email address or a mobile
+						   phone number you can verify. Users without a verifiable email address and
+						   mobile phone number will not be able to use our service.</p>
+					</div>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 8</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>Songzaby is a digital music distribution service that allows recording
+						   artists, record labels, or production companies to manage the distribution of
+						   their intellectual property. Therefore, all account holders must have a
+						   verifiable email address and phone number to enable us to communicate with
+						   the account holder about the account. We use your email address for
+						   communicate with you and your mobile phone number as a security measure to
+						   protect your account from security breaches.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Season 1 -->
+			<section>
+				<div class="faq-section-header">
+					<h2>Artworks</h2>
+					<svg class="expand-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+						<path d="M24 24H0V0h24v24z" fill="none" opacity=".87" />
+						<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />
+					</svg>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 10</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>Songzaby can be used through our website located at <a href="#">https://songzaby.com</a>.
+						   In order to use our service, you will need to <a href="#">create a free
+						                                                             account</a> on our
+						   website. Creating an account and free for anyone who wants to use our
+						   service.</p>
+					</div>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 9</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>To create a Songzaby's account you will need an email address or a mobile
+						   phone number you can verify. Users without a verifiable email address and
+						   mobile phone number will not be able to use our service.</p>
+					</div>
+				</div>
+				<div class="question-answer-box">
+					<div class="faq-question">
+						<h3>Episode 8</h3>
+						<svg class="faq-icons close-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+						</svg>
+						<svg class="faq-icons add-icons" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+							<path d="M0 0h24v24H0V0z" fill="none" />
+							<path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+						</svg>
+					</div>
+					<div class="faq-answers">
+						<p>Songzaby is a digital music distribution service that allows recording
+						   artists, record labels, or production companies to manage the distribution of
+						   their intellectual property. Therefore, all account holders must have a
+						   verifiable email address and phone number to enable us to communicate with
+						   the account holder about the account. We use your email address for
+						   communicate with you and your mobile phone number as a security measure to
+						   protect your account from security breaches.</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<?php
+require('../library/footer.php'); ?>
+
+
+	<script defer>
+		window.onload = function() {
+
+			// Get all h2 elements and append the array to the select element with the id "sort-list" within an option element.
+
+			let h2 = document.getElementsByTagName("h2");
+			let select = document.getElementById("sort-list");
+			let defaultOption = document.createElement("option");
+			defaultOption.text = "Select season";
+			select.add(defaultOption);
+
+			// Select and disable the default option.
+			defaultOption.selectedIndex = 0;
+			defaultOption.disabled = true;
+			defaultOption.selected = true;
+
+			// Create a function that hides all given elements.
+			function hideElements(elements) {
+				for (let e of elements) {
+					e.style.display = "none";
+				}
+			}
+
+			// Create a function that shows all given elements.
+			function showElements(elements) {
+				for (let e of elements) {
+					e.style.display = "block";
+				}
+			}
+
+			// Create a function that hides all elements with a given class name.
+			function hideElementsByClassName(className) {
+				let elements = document.getElementsByClassName(className);
+				hideElements(elements);
+			}
+
+			// Create a function that shows all elements with a given class name.
+			function showElementsByClassName(className) {
+				let elements = document.getElementsByClassName(className);
+				showElements(elements);
+			}
+
+			// Create a function that hides all elements with a given id.
+			function hideElementsById(id) {
+				let elements = document.getElementById(id);
+				hideElements(elements);
+			}
+
+			// Create a function that shows all elements with a given id.
+			function showElementsById(id) {
+				let elements = document.getElementById(id);
+				showElements(elements);
+			}
+
+			// const function hideAllElements = (elements) => {
+			// 	for (let i = 0; i < elements.length; i++) {
+			// 		elements[i].style.display = "none";
+			// 	}
+			// }
+
+			// Hide all the "close-icons" and "faq-answers"
+			hideElementsByClassName("close-icons");
+			hideElementsByClassName("faq-answers");
+
+			// Hide all the svg icons with class "add-icon"
+			// let closeIcon = document.getElementsByClassName("close-icon");
+			// for (let i of closeIcon) {
+			// 	i.style.display = "none";
+			// }
+
+			// Add the h2 elements to the select element.
+			for (let heading of h2) {
+				let option = document.createElement("option");
+				option.text = heading.innerText;
+				select.add(option);
+			}
+
+			// Add the event listener to the select element.
+			select.addEventListener("change", function() {
+				// Get the selected option.
+				let selectedOption = this.options[this.selectedIndex];
+
+				// Get the selected option's text.
+				let selectedOptionText = selectedOption.text;
+
+				// Get all h2 elements.
+				let sectionTitle = document.getElementsByTagName("h2");
+
+				// Loop through the h2 elements and check if the text of the selected option matches the text of the h2 element.
+				for (let heading of sectionTitle) {
+					if (heading.innerText === selectedOptionText) {
+						// If the text matches, scroll to the h2 element.
+						heading.scrollIntoView();
+					}
+				}
+			});
+		};
+	</script>
 </main>
 <footer>
-	<p>&copy;2021 Magsaysay | All rights reserved.</p>
+	<p>&copy;2006-2021 Magsaysay | All rights reserved.</p>
 </footer>
 </body>
 <script src="script.js" defer></script>
