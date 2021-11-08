@@ -303,7 +303,6 @@ table .btn {
     flex-wrap: wrap;
 }
 
-
 .feature-album-container {
     display: flex;
     flex-direction: column;
@@ -311,27 +310,32 @@ table .btn {
 }
 
 /* TABLE STYLES */
+#tour-table {
+    max-width: 1200px;
+    overflow-x: auto;
+    margin: 0 auto;
+    background-color: var(--dark);
+}
 
 table {
     font-family: 'Rubik', sans-serif;
-    /*display: flex;*/
-    /*flex-direction: column;*/
 }
 
-/*table th {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
+table caption, table tfoot {
+    background-color: var(--white);
+    color: var(--black);
+}
 
-/*table th, table td {*/
-/*    width: max(100%, 300px);*/
-/*    border: solid thin var(--link);*/
-/*}*/
+table tfoot {
+    font: smaller sans-serif;
+}
+
+table th, table td {
+    width: max(100%, 300px);
+}
 
 table td {
-    height: 200px;
+    min-height: 200px;
 }
 
 table th, table td {
@@ -342,12 +346,7 @@ table th, table td {
     width: 100%;
 }
 
-/*table tr {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
-
-table td {
+.table-cell {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,7 +354,6 @@ table td {
 }
 
 table thead tr th[scope="col"] {
-    background-color: rgba(19, 145, 100, .8);
     background-color: #717451;
     color: var(--link);
     font-weight: 500;
@@ -365,10 +363,6 @@ table thead tr th[scope="col"] {
 table tbody tr th[scope="row"] {
     font-weight: 400;
     white-space: nowrap;
-}
-
-table thead tr, table tbody tr:nth-child(even) {
-    background-color: rgb(236, 236, 236);
 }
 
 table span {
@@ -381,27 +375,26 @@ table span {
     text-transform: uppercase;
 }
 
-.fill{
+table td {
     background-color: var(--accent);
     color: #FFF;
     white-space: nowrap;
+    box-shadow: var(--lighter);
+}
+
+.no-show-cell, .cancel-show {
+    background-color: var(--glass);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
 }
 
 .no-show-cell {
-    background-color: var(--glass);
-    border: none;
+    color: var(--silver);
 }
 
 .cancel-show {
-    color: var(--silver);
-    background-color: #27282c;
-    border: none;
-}
-
-.cancel-text {
-    color: #ff0000;
-    font-weight: 700;
-    text-transform: uppercase;
+    color: #d02222;
 }
 
 .time {
@@ -409,20 +402,10 @@ table span {
     color: var(--time);
 }
 
-.cancel-time {
-    color: var(--silver);
-}
-
 .ticket-price {
     font-weight: 500;
     color: var(--ticket-price);
 }
-
-/* new table styles */
-
-
-
-/* end new table styles */
 
 /* END TABLE STYLES */
 
@@ -434,7 +417,6 @@ table span {
     align-items: center;
     margin: 5em auto;
     width: 100%;
-    /*border: solid 2px red;*/
 }
 
 .cards-section {
