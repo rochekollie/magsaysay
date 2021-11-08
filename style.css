@@ -330,17 +330,17 @@ table {
 /*    border: solid thin var(--link);*/
 /*}*/
 
-/*table td {*/
-/*    height: 200px;*/
-/*}*/
+table td {
+    height: 200px;
+}
 
-/*table th, table td {*/
-/*    border-top: none;*/
-/*}*/
+table th, table td {
+    border-top: none;
+}
 
-/*#table-dates {*/
-/*    width: 100%;*/
-/*}*/
+#table-dates {
+    width: 100%;
+}
 
 /*table tr {*/
 /*    display: flex;*/
