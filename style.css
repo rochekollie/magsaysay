@@ -314,35 +314,38 @@ table .btn {
 
 table {
     font-family: 'Rubik', sans-serif;
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 
-table th {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/*table th {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
-table th, table td {
-    width: max(100%, 300px);
-    border: solid thin var(--link);
-}
+/*table th, table td {*/
+/*    width: max(100%, 300px);*/
+/*    border: solid thin var(--link);*/
+/*}*/
 
-table td {
-    height: 200px;
-}
+/*table td {*/
+/*    height: 200px;*/
+/*}*/
 
-table th, table td {
-    border-top: none;
-}
+/*table th, table td {*/
+/*    border-top: none;*/
+/*}*/
 
-#table-dates {
-    width: 100%;
-}
+/*#table-dates {*/
+/*    width: 100%;*/
+/*}*/
 
-table tr {
-    display: flex;
-}
+/*table tr {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
 table td {
     display: flex;
@@ -414,6 +417,12 @@ table span {
     font-weight: 500;
     color: var(--ticket-price);
 }
+
+/* new table styles */
+
+
+
+/* end new table styles */
 
 /* END TABLE STYLES */
 
@@ -657,7 +666,7 @@ table span {
     border-top: solid thin var(--link);
     display: flex;
     flex-direction: column;
-    font-size: clamp(.5rem, .5vw, 1rem);
+    font-size: clamp(.7rem, .5vw, 1.2rem);
 }
 
 .credits-wrapper h4 {
