@@ -20,8 +20,8 @@
     --deep: 12px 1px 6px 6px rgba(0, 0, 0, 0.12);
     --effects: 12px 1px 6px 12px rgba(0, 0, 0, 0.12);
     --price: #c5822a;
-    --ticket-price: #EEEB92;
-    --time: rgb(21, 20, 20);
+    --ticket-price: #b4f58e;
+    --time: rgb(139, 225, 250);
 }
 
 html {
@@ -273,6 +273,7 @@ ul li {
     font-size: clamp(1rem, 2vw, 1em);
     box-sizing: border-box;
     width: auto;
+    margin-bottom: 3.5em;
 }
 
 button:hover, .btn:hover {
@@ -311,14 +312,17 @@ table .btn {
 
 /* TABLE STYLES */
 #tour-table {
-    max-width: 1200px;
     overflow-x: auto;
-    margin: 0 auto;
-    background-color: var(--dark);
+    margin: 0 2.5%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 table {
     font-family: 'Rubik', sans-serif;
+    background-color: var(--dark);
 }
 
 table caption, table tfoot {
@@ -328,10 +332,7 @@ table caption, table tfoot {
 
 table tfoot {
     font: smaller sans-serif;
-}
-
-table th, table td {
-    width: max(100%, 300px);
+    font-weight: 400;
 }
 
 table td {
@@ -367,6 +368,10 @@ table tbody tr th[scope="row"] {
 
 table span {
     margin: .3rem auto;
+}
+
+table td span:first-child {
+    text-align: center;
 }
 
 .city-name {
@@ -560,10 +565,6 @@ table td {
     padding: 0 2rem;
 }
 
-.artist-card h2 {
-    /*margin-top: -3rem;*/
-}
-
 .artist-img-box {
     width: 200px;
     height: 200px;
@@ -726,5 +727,11 @@ table td {
         margin-right: -50%;
         transform: translate(-50%, -50%);
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 964px) {
+    button, .btn {
+        margin-bottom: 0;
     }
 }
