@@ -12,9 +12,6 @@ about.html,8/1/8143af03f594989ae71e2d1be57beadf78357d4c
 booking.html,d/4/d4dd26aa6987c8dcf1bf8c3f0c2233373e2d0d23
 :
 
-index.html,f/6/f6013a00b362253c64368d6eebc50ea2131754e2
-:
-
 merch.html,b/d/bd6c83975f085122d89cca68f12603acf74a1a0b
 :
 
