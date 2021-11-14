@@ -283,6 +283,7 @@ button:hover,
 	color: var(--accent);
 	background-color: var(--link);
 	border: solid 1px var(--accent);
+    text-decoration: none;
 }
 
 table .btn {
